@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkFlow with Responsive Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bc722afb8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="bg">
+    <!-- Nav section starts here -->
+    <nav>
+        <div class="logo">
+            <h2>Snap</h2>
+        </div>
+        <div class="nav-items" id="ToggleMenu">
+            <ul class="nav-links">
+                <li><a href="#" class="features-drop" onclick="OpenFeatures()">Features
+                        <span class="left-icon"></span>
+                        <span class="right-icon"></span></a></li>
+                <div class="sub-features" id="features">
+                    <ul>
+                        <li><img src="icon-todo.svg"><a href="#">Todo List</a></li>
+                        <li><img src="icon-calendar.svg"><a href="#">Calender</a></li>
+                        <li><img src="icon-planning.svg"><a href="#">Planning</a></li>
+                        <li><img src="icon-reminders.svg"><a href="#">Remainder</a></li>
+                    </ul>
+                </div>
+                <!-- <i class="fa-sharp fa-solid fa-caret-down icon"></i></ -->
+                <li><a href="#" class="company-drop" onclick="OpenCompany()">Company
+                        <span class="left-icon"></span>
+                        <span class="right-icon"></span></a>
+                </li>
+                <div class="sub-company" id="company">
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+
+            <div class="buttons">
+                <a href="#">Login</a>
+                <a class="register" href="#">Register</a>
+            </div>
+        </div>
+        <div class="burger" onclick="OpenMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Nav section ends here -->
+
+    <!-- home starts From here -->
+    <section class="home">
+        <div class="text-content">
+            <h1>Make remote work</h1>
+
+            <p>
+                Get your team in sync,no matter your location.
+                Streamline processes,create team rituals,and watch productivity soar.
+            </p>
+            <div class="links">
+                <a href="#">Learn More</a>
+            </div>
+            <div class="clients">
+                <div><img src="client-databiz.svg"></div>
+                <div><img src="client-audiophile.svg"></div>
+                <div> <img src="client-meet.svg"></div>
+                <div> <img src="client-maker.svg">
+                </div>
+            </div>
+        </div>
+        <div class="img-content">
+            <img src="image-hero-desktop.png" alt="desktop design">
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
